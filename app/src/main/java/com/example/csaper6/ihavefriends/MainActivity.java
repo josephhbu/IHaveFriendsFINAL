@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setSpinners() {
-        ArrayAdapter<CharSequence> notifications_adapter = ArrayAdapter.createFromResource(this,
+        ArrayAdapter<CharSequence> notificationsAdapter = ArrayAdapter.createFromResource(this,
                 R.array.notifications_array, android.R.layout.simple_spinner_dropdown_item);
-        notifications_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        notifications.setAdapter(notifications_adapter);
-        ArrayAdapter<CharSequence> time_adapter = ArrayAdapter.createFromResource(this,
+        notificationsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        notifications.setAdapter(notificationsAdapter);
+        ArrayAdapter<CharSequence> timeAdapter = ArrayAdapter.createFromResource(this,
                 R.array.time_array, android.R.layout.simple_spinner_dropdown_item);
-        time_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        time.setAdapter(time_adapter);
+        timeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        time.setAdapter(timeAdapter);
     }
 
     private void wireWidgets() {
